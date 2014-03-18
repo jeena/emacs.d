@@ -8,14 +8,15 @@
 (column-number-mode 1)
 (setq tab-width 4)
 (setq-default tab-width 4)
-(setq indent-tabs-mode nil)
-(setq-default indent-tabs-mode nil)
+;;(setq indent-tabs-mode nil)
+;;(setq-default indent-tabs-mode nil)
 (setq backup-inhibited 1)
 (setq-default backup-inhibited 1)
 (setq auto-save-default nil)
 (setq-default auto-save-default nil)
 (setq auto-save-list-file-prefix nil)
 (setq-default auto-save-list-file-prefix nil)
+(global-auto-revert-mode t)
 
 (when (fboundp 'global-font-lock-mode) 
   (global-font-lock-mode t)
@@ -54,4 +55,3 @@
 (require 'smartparens-config)
 (smartparens-global-mode)
 (show-smartparens-global-mode t)
-
