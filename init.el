@@ -8,8 +8,10 @@
 (column-number-mode 1)
 (setq tab-width 4)
 (setq-default tab-width 4)
-;;(setq indent-tabs-mode nil)
-;;(setq-default indent-tabs-mode nil)
+
+(setq-default c-default-style "linux" c-basic-offset 4)
+(setq-default indent-tabs-mode nil)
+
 (setq backup-inhibited 1)
 (setq-default backup-inhibited 1)
 (setq auto-save-default nil)
@@ -18,6 +20,8 @@
 (setq-default auto-save-list-file-prefix nil)
 (global-auto-revert-mode t)
 
+(load-theme 'misterioso)
+
 (when (fboundp 'global-font-lock-mode) 
   (global-font-lock-mode t)
   (setq font-lock-maximum-decoration t))
@@ -55,3 +59,10 @@
 (require 'smartparens-config)
 (smartparens-global-mode)
 (show-smartparens-global-mode t)
+
+(defun iwb ()
+  "indent whole buffer"
+  (interactive)
+  (delete-trailing-whitespace)
+  (indent-region (point-min) (point-max) nil)
+  (untabify (point-min) (point-max)))
