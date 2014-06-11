@@ -6,3 +6,4 @@
 (depends-on "smartparens")
 (depends-on "magit")
 
+ (depends-on "projectile")

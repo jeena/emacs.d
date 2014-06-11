@@ -9,6 +9,8 @@
 (setq tab-width 4)
 (setq-default tab-width 4)
 
+(linum-mode)
+
 (setq-default c-default-style "linux" c-basic-offset 4)
 (setq-default indent-tabs-mode nil)
 
@@ -21,7 +23,7 @@
 (global-auto-revert-mode t)
 
 (load-theme 'misterioso)
-
+
 (when (fboundp 'global-font-lock-mode) 
   (global-font-lock-mode t)
   (setq font-lock-maximum-decoration t))
@@ -66,3 +68,11 @@
   (delete-trailing-whitespace)
   (indent-region (point-min) (point-max) nil)
   (untabify (point-min) (point-max)))
+
+(require 'projectile)
+(projectile-global-mode)
+ 
+(setq projectile-indexing-method 'find
+projectile-enable-caching t)
+ 
+(global-set-key "\C-p" 'projectile-find-file)
