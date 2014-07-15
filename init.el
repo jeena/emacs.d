@@ -9,6 +9,10 @@
 (setq tab-width 4)
 (setq-default tab-width 4)
 
+(require 'autopair)
+(autopair-global-mode 1)
+(setq autopair-autowrap t)
+
 (linum-mode)
 
 (setq-default c-default-style "linux" c-basic-offset 4)
@@ -76,3 +80,10 @@
 projectile-enable-caching t)
  
 (global-set-key "\C-p" 'projectile-find-file)
+
+(require 'auto-complete-clang)
+(global-set-key (kbd "C-`") 'ac-complete-clang)
+
+(auto-complete-mode)
+
+(server-start)
