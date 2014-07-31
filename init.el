@@ -81,9 +81,6 @@ projectile-enable-caching t)
  
 (global-set-key "\C-p" 'projectile-find-file)
 
-(require 'auto-complete-clang)
-(global-set-key (kbd "C-`") 'ac-complete-clang)
-
-(auto-complete-mode)
-
 (server-start)
+
+(require 'init-linum "~/.emacs.d/init-linum.el")
