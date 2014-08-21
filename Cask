@@ -5,5 +5,6 @@
 (depends-on "ido-vertical-mode")
 (depends-on "smartparens")
 (depends-on "magit")
+(depends-on "autopair")
 
- (depends-on "projectile")
+(depends-on "projectile")
