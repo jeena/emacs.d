@@ -1,5 +1,6 @@
-emacs.d
-=======
+#!/bin/sh
+
+# installation of .emacs.d and cask
 
 cd ~
 brew install emacs
