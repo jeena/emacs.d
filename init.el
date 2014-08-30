@@ -1,6 +1,15 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
+;; Determine if running a GNU/Linux distro or Mac OSX
+(setq macosx-p (string-match "darwin" (symbol-name system-type)))
+(setq linux-p (string-match "gnu/linux" (symbol-name system-type)))
+
+(when macosx-p 
+    (setq default-input-method "MacOSX")
+    (setq mac-command-modifier 'meta)
+    (setq mac-option-modifier 'none))
+
 (tool-bar-mode 0)
 (menu-bar-mode 0)
 (show-paren-mode 1)
@@ -10,8 +19,8 @@
 (setq-default tab-width 4)
 
 (require 'autopair)
-(autopair-global-mode 1)
-(setq autopair-autowrap t)
+(autopair-global-mode 0)
+(setq autopair-autowrap nil)
 
 (linum-mode)
 
@@ -84,3 +93,4 @@ projectile-enable-caching t)
 (server-start)
 
 (require 'init-linum "~/.emacs.d/init-linum.el")
+
