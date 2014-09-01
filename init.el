@@ -84,3 +84,5 @@ projectile-enable-caching t)
 (server-start)
 
 (require 'init-linum "~/.emacs.d/init-linum.el")
+
+(global-linum-mode t)
