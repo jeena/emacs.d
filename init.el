@@ -1,6 +1,17 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
+(add-to-list 'load-path "~/.emacs.d/")
+
+;; Determine if running a GNU/Linux distro or Mac OSX
+(setq macosx-p (string-match "darwin" (symbol-name system-type)))
+(setq linux-p (string-match "gnu/linux" (symbol-name system-type)))
+
+(when macosx-p 
+    (setq default-input-method "MacOSX")
+    (setq mac-command-modifier 'meta)
+    (setq mac-option-modifier 'none))
+
 (tool-bar-mode 0)
 (menu-bar-mode 0)
 (show-paren-mode 1)
@@ -10,8 +21,8 @@
 (setq-default tab-width 4)
 
 (require 'autopair)
-(autopair-global-mode 1)
-(setq autopair-autowrap t)
+(autopair-global-mode 0)
+(setq autopair-autowrap nil)
 
 (linum-mode)
 
@@ -85,4 +96,10 @@ projectile-enable-caching t)
 
 (require 'init-linum "~/.emacs.d/init-linum.el")
 
+;; Vala Mode
+(autoload 'vala-mode "vala-mode" "Major mode for editing Vala code." t)
+(add-to-list 'auto-mode-alist '("\\.vala$" . vala-mode))
+(add-to-list 'file-coding-system-alist '("\\.vala$" . utf-8))
+
 (global-linum-mode t)
+
