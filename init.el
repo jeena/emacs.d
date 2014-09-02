@@ -15,17 +15,9 @@
 (tool-bar-mode 0)
 (menu-bar-mode 0)
 (show-paren-mode 1)
-(line-number-mode 1)
-(column-number-mode 1)
+
 (setq tab-width 4)
 (setq-default tab-width 4)
-
-(require 'autopair)
-(autopair-global-mode 0)
-(setq autopair-autowrap nil)
-
-(linum-mode)
-
 (setq-default c-default-style "linux" c-basic-offset 4)
 (setq-default indent-tabs-mode nil)
 
@@ -87,15 +79,13 @@
 (require 'projectile)
 (projectile-global-mode)
  
-(setq projectile-indexing-method 'find
-projectile-enable-caching t)
+(setq projectile-indexing-method 'find projectile-enable-caching t)
  
 (global-set-key "\C-p" 'projectile-find-file)
 
 (server-start)
 
 (require 'init-linum "~/.emacs.d/init-linum.el")
-
 
 ;; Vala Mode
 (autoload 'vala-mode "vala-mode" "Major mode for editing Vala code." t)
