@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/Projects/chuck.js/" "~/Projects/Media-Manager-Rygel-LMS-Plugin/" "/usr/local/")
