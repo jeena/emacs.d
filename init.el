@@ -1,7 +1,7 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/lisp/")
 
 ;; Determine if running a GNU/Linux distro or Mac OSX
 (setq macosx-p (string-match "darwin" (symbol-name system-type)))
@@ -85,9 +85,12 @@
 
 (server-start)
 
-(require 'init-linum "~/.emacs.d/init-linum.el")
+(require 'init-linum "~/.emacs.d/lisp/init-linum.el")
 
 ;; Vala Mode
 (autoload 'vala-mode "vala-mode" "Major mode for editing Vala code." t)
 (add-to-list 'auto-mode-alist '("\\.vala$" . vala-mode))
 (add-to-list 'file-coding-system-alist '("\\.vala$" . utf-8))
+
+(global-linum-mode t)
+
