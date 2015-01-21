@@ -83,7 +83,8 @@
  
 (global-set-key "\C-p" 'projectile-find-file)
 
-(server-start)
+(require 'server)
+(or (server-running-p) (server-start))
 
 (require 'init-linum "~/.emacs.d/lisp/init-linum.el")
 
