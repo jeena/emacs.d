@@ -6,5 +6,5 @@
 (depends-on "smartparens")
 (depends-on "magit")
 (depends-on "autopair")
-
+(depends-on "markdown-mode")
 (depends-on "projectile")
