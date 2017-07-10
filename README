@@ -19,3 +19,5 @@ source $MYSHELLRC
 cask upgrade-cask
 cd .emacs.d/
 cask install
+
+# To add new modules add them to the Cask file
