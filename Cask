@@ -8,3 +8,5 @@
 (depends-on "autopair")
 (depends-on "markdown-mode")
 (depends-on "projectile")
+(depends-on "rust-mode")
+
