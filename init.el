@@ -115,6 +115,9 @@
 
 (add-to-list 'auto-mode-alist '("\\.service$" . conf-mode))
 
+(add-hook 'markdown-mode-hook 'flyspell-mode)
+(add-hook 'rst-mode-hook 'flyspell-mode)
+
 (global-linum-mode t)
 
 (custom-set-faces
@@ -123,3 +126,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(setq-default
+ whitespace-line-column 78
+ whitespace-style       '(face lines-tail))
+(add-hook 'prog-mode-hook #'whitespace-mode)
+(add-hook 'rst-mode-hook #'whitespace-mode)
