@@ -133,3 +133,4 @@
 (add-hook 'prog-mode-hook #'whitespace-mode)
 (add-hook 'rst-mode-hook #'whitespace-mode)
 (add-hook 'markdown-mode-hook #'whitespace-mode)
+
