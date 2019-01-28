@@ -1,0 +1,53 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/rpannek/Projects/dashboard/static/" . "css/")
+ ("/home/rpannek/Projects/dashboard/" . "static/")
+ ("/home/rpannek/.config/systemd/user/" . "default.target.wants/")
+ ("/home/rpannek/.config/systemd/" . "user/")
+ ("/home/rpannek/.config/" . "systemd/")
+ ("/home/rpannek/" . "Projects/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/rpannek/Projects/"
+ "/home/rpannek/Projects/dashboard/static/css/"
+ "/home/rpannek/Documents/"
+ "/home/rpannek/.config/systemd/user/default.target.wants/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "test-mtc-access.py"
+ "custom.css"
+ "sshagent.md"
+ "nm-applet.service"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/rpannek/Documents/" (23572 11420 433440 359000) "freeipa-logins.ods" "harman.md" "integration.odp" "avantest.odp" "Daimler-AG-ALM-DAI-8856.p12" "time-forks-mbient.png" "advantest.odp" "../" "./" "Tony.org" "Project-from-integration-view-point.pdf" "Richrd Pannek - misrac++ - single user.pdf")
+
+ ("/home/rpannek/Projects/dashboard/static/css/" (23623 12811 171010 29000) "../" "./" "custom.css")
+
+ ("/home/rpannek/Projects/" (23624 36418 691238 667000) "FeedTheMonkey/" "dashboard/" "examples.org" "vfi-seat-service/" "example-library/" "sde/" "mbient-pipeliner-depot/" "meta-example/" "gitlab-branch-source-plugin/" "yaourt/" "plot/" "ntgx-software-factory/" "pipeliner/" "ntg-x-pipeliner-depot/" "example-service/" "../" "ntgx-manifests/" "./" "carvis/" "package-query/")
+
+ ("/home/rpannek/" (23630 47571 36784 677000) ".zsh-update" ".gnupg/" ".zcompdump-George-5.3.1" ".juniper_networks/" "Videos/" ".gimp-2.8/" "Downloads/" ".gitconfig" ".zsh_history" "VirtualBox VMs/" ".bash_logout" ".config/" ".HipChat/" ".mozilla/" ".zcompdump-George-5.5.1" ".repoconfig/" ".pulse_secure/" ".electron/" ".java/" ".docker/" ".ssh/" ".emacs.d/" ".~lock.git-dates.csv#" ".yarn/" ".dev-shell-extensions/" ".zcompdump-George-5.4.1" "Sync/" ".gradle/" "Projects/" ".electron-gyp/" ".bashrc" ".node-gyp/" "Music/" ".cask/" ".oh-my-zsh/" ".thunderbird/" ".rnd" ".cache/" "Pictures/" ".zoom/" ".esd_auth" ".zshrc" ".ICEauthority" ".thumbnails/" "../" ".zcompdump-George-5.4.2" ".bash_history" "Public/" "Desktop/" ".local/" "./" ".QtWebEngineProcess/" ".zcompdump-William-5.7" ".bash_profile" ".zcompdump-William-5.6.2" "Documents/" "EMTC_AGSC_A_PANNEKR@53.55.10.48" ".repo_.gitconfig.json" "Templates/" ".pki/" ".plotly/" ".texlive/" ".v8flags.6.2.414.46-node.20.cedea84a5aee7914fc400f174ba784a7.json" ".lesshst")
+
+ ("/home/rpannek/Projects/dashboard/static/" (23621 46155 427393 626000) "css/" "js/" "../" "./" "images/")
+
+ ("/home/rpannek/Projects/dashboard/" (23623 11665 184290 507000) ".git/" "install" "team.html" "home.html" "index.html" "static/" "tabs.html" "Jenkinsfile" "../" "./" "README.md")
+
+ ("/home/rpannek/.config/systemd/user/default.target.wants/" (23567 28763 570023 473000) "nm-applet.service" "../" "./" "syncthing.service")
+
+ ("/home/rpannek/.config/systemd/user/" (23543 9226 233486 379000) "default.target.wants/" "../" "./")
+
+ ("/home/rpannek/.config/systemd/" (23543 9226 230153 44000) "user/" "../" "./")
+
+ ("/home/rpannek/.config/" (23550 42954 363509 224000) "autostart/" "monitors.xml" "syncthing/" "user-dirs.locale" "libreoffice/" "syncthing.bak/" "Unknown Organization/" "git/" "matplotlib/" "user-dirs.dirs" "transmission/" "mimeapps.list" "vlc/" "goa-1.0/" "eog/" "QtProject.conf" "pulse/" "skypeforlinux/" "nuntius/" "epiphany/" "systemd/" "Rocket.Chat+/" "terminator/" "configstore/" "gnome-session/" "evolution/" "zoomus.conf" "Atlassian/" "Empathy/" "dleyna-renderer-service.conf" "hexchat/" "gtk-3.0/" "gconf/" "gnome-boxes/" "nautilus/" "dconf/" "Trolltech.conf" "../" "keepassxc/" "chromium/" "keepassx/" "./" "dleyna-server-service.conf" "gtk-2.0/" "enchant/" "darktable/" "Jeena/" "ibus/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
