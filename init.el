@@ -134,3 +134,6 @@
 (add-hook 'rst-mode-hook #'whitespace-mode)
 (add-hook 'markdown-mode-hook #'whitespace-mode)
 
+(cua-mode t)
+(setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
+(transient-mark-mode 1) ;; No region when it is not highlighted
