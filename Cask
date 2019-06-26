@@ -9,4 +9,4 @@
 (depends-on "markdown-mode")
 (depends-on "projectile")
 (depends-on "rust-mode")
-
+(depends-on "groovy-mode")
